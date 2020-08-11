@@ -21,27 +21,27 @@
 namespace avr {
 namespace memory {
 
-template<uint8_t ADDR>
+template <uint8_t ADDR>
 struct Register {
-  constexpr Register& operator= (const uint8_t& value) {
+  constexpr Register& operator=(const uint8_t& value) {
     *reinterpret_cast<volatile uint8_t*>(ADDR) = value;
     return *this;
   }
 
-  constexpr uint8_t operator& (const uint8_t& ref) const {
+  constexpr uint8_t operator&(const uint8_t& ref) const {
     return *reinterpret_cast<volatile uint8_t*>(ADDR) & ref;
   }
 
-  constexpr uint8_t operator| (const uint8_t& ref) const {
+  constexpr uint8_t operator|(const uint8_t& ref) const {
     return *reinterpret_cast<volatile uint8_t*>(ADDR) | ref;
   }
 
-  constexpr Register& operator&= (const uint8_t& ref) {
+  constexpr Register& operator&=(const uint8_t& ref) {
     *reinterpret_cast<volatile uint8_t*>(ADDR) &= ref;
     return *this;
   }
 
-  constexpr Register& operator|= (const uint8_t& ref) {
+  constexpr Register& operator|=(const uint8_t& ref) {
     *reinterpret_cast<volatile uint8_t*>(ADDR) |= ref;
     return *this;
   }

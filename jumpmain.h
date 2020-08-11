@@ -22,8 +22,8 @@
 #define JUMPMAIN_H
 
 __attribute__((naked)) void __jumpMain() {
-  asm volatile ( ".set __stack, %0" :: "i" (avr::io::RAMEND) );
-  asm volatile ( "rjmp main");
+  asm volatile(".set __stack, %0" ::"i"(avr::io::RAMEND));
+  asm volatile("rjmp main");
 }
 
 #endif  // JUMPMAIN_H

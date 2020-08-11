@@ -22,15 +22,15 @@ namespace avr {
 namespace io {
 
 #if defined __AVR_ATmega16M1__
-  #include "device/atmega16m1.h"
+#include "device/atmega16m1.h"
 #elif defined __AVR_ATmega32M1__
-  #include "device/atmega32m1.h"
+#include "device/atmega32m1.h"
 #elif defined __AVR_ATmega64M1__
-  #include "device/atmega64m1.h"
+#include "device/atmega64m1.h"
 #elif defined __AVR_ATtiny10__
-  #include "device/attiny10.h"
+#include "device/attiny10.h"
 #else
-  #error "Device type not defined/unknownn device type"
+#error "Device type not defined/unknownn device type"
 #endif
 
 }  // namespace io

@@ -18,25 +18,15 @@
 
 namespace avr {
 
-__attribute__((always_inline)) inline void sei() {
-  asm volatile ("sei");
-}
+__attribute__((always_inline)) inline void sei() { asm volatile("sei"); }
 
-__attribute__((always_inline)) inline void cli() {
-  asm volatile ("cli");
-}
+__attribute__((always_inline)) inline void cli() { asm volatile("cli"); }
 
-__attribute__((always_inline)) inline void wdr() {
-  asm volatile ("wdr");
-}
+__attribute__((always_inline)) inline void wdr() { asm volatile("wdr"); }
 
-__attribute__((always_inline)) inline void sleep() {
-  asm volatile ("sleep");
-}
+__attribute__((always_inline)) inline void sleep() { asm volatile("sleep"); }
 
-__attribute__((always_inline)) inline void nop() {
-  asm volatile ("nop");
-}
+__attribute__((always_inline)) inline void nop() { asm volatile("nop"); }
 
 }  // namespace avr
 
