@@ -16,8 +16,6 @@
 #ifndef AVR_ATTINY10_H
 #define AVR_ATTINY10_H
 
-#include "memory/register.h"
-
 constexpr const uint16_t RAMEND = 0x5F;
 
 __attribute__((unused)) static avr::memory::Register<0x00> PINB;

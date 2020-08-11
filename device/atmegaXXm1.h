@@ -16,8 +16,6 @@
 #ifndef AVR_ATMEGAXXM1_H
 #define AVR_ATMEGAXXM1_H
 
-#include "memory/register.h"
-
 __attribute__((unused)) static avr::memory::Register<0x23> PINB;
 __attribute__((unused)) static avr::memory::Register<0x24> DDRB;
 __attribute__((unused)) static avr::memory::Register<0x25> PORTB;

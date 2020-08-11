@@ -16,6 +16,8 @@
 #ifndef AVR_IO_H
 #define AVR_IO_H
 
+#include "memory/regiser.h"
+
 namespace avr {
 namespace io {
 
