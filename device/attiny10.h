@@ -54,6 +54,13 @@ __attribute__((unused)) static avr::memory::Register<0x35> PRR;
 constexpr const uint8_t PRTIM0 = 0;
 constexpr const uint8_t PRADC = 1;
 
+__attribute__((unused)) static avr::memory::Register<0x36> CLKPSR;
+
+constexpr const uint8_t CLKPS0 = 0;
+constexpr const uint8_t CLKPS1 = 1;
+constexpr const uint8_t CLKPS2 = 2;
+constexpr const uint8_t CLKPS3 = 3;
+
 __attribute__((unused)) static avr::memory::Register<0x3A> SMCR;
 
 constexpr const uint8_t SE = 0;
