@@ -18,8 +18,10 @@
 
 #include <stdint.h>
 
-namespace avr {
-namespace memory {
+namespace avr::memory {
+
+// NOLINTBEGIN(performance-no-int-to-ptr)
+// NOLINTBEGIN(clang-diagnostic-deprecated-volatile)
 
 template <uint8_t ADDR>
 struct Register {
@@ -47,7 +49,9 @@ struct Register {
   }
 };
 
-}  // namespace memory
-}  // namespace avr
+// NOLINTEND(clang-diagnostic-deprecated-volatile)
+// NOLINTEND(performance-no-int-to-ptr)
+
+}  // namespace avr::memory
 
 #endif  // REGISTER_H
